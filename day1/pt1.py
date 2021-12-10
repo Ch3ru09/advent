@@ -3,5 +3,5 @@ a = b = 0
 for x in f:
     if a < x:
         b += 1
-    a=x
+    a = x
 print(b)
