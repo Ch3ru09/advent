@@ -18,7 +18,7 @@ for d in range(len(f[0])):
     if b >= g:
         f = f[b-1::-1]
     else:
-        f = f[b::1]
+        f = f[g-1::1]
     c = 0
     b = g = 0
 print(f)
