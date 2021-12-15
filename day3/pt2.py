@@ -4,14 +4,13 @@ f.pop()
 b, c, g = 0, 0, 0
 
 
-def eh(e):
-    return int(e)*-1
+def eh(e): return int(e)
 
 
 for d in range(len(f[0])):
     f.sort(key=eh)
     for x in f:
-        if x[d] == '0':
+        if x[d] == '1':
             b += 1
         else:
             g += 1
@@ -22,5 +21,5 @@ for d in range(len(f[0])):
     c = 0
     b = g = 0
 print(f)
-'101111110011'
-'000000000111'
+print(int('101011000000', 2))
+print(int('101011000000', 2))
