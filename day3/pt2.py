@@ -3,13 +3,8 @@ f.pop()
 
 b, c, g = 0, 0, 0
 
-
-def eh(e):
-  return int(e)
-
-
 for d in range(len(f[0])):
-  f.sort(key=eh)
+  f.sort(key=lambda e: int(e))
   for x in f:
     if x[d] == '1':
       b += 1

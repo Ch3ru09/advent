@@ -18,12 +18,12 @@ boards.pop(0)
 ref = ref[0].split(',')
 
 p = 0
-
+stop = 0
 a = 0
 ans = []
 winNum = 0
 for x in ref:
-    # getting every value in ref:
+    # getting every value in ref
     for i, e in enumerate(boards):
         if ans.count(e) < 1:
             for el in e:
@@ -40,20 +40,20 @@ for x in ref:
                         if ans.count(e) < 1:
                             ans.append(e)
                     temp2 = 0
-                    if row[column] == -1:
+                    if row[column].count('yes') > 0:
                         temp += 1
                 if temp == len(e):
                     if ans.count(e) < 1:
                         ans.append(e)
                 temp = 0
-    if len(boards) == len(ans):
+    if len(boards) == len(ans) and stop == 0:
         winNum = int(x)
         a = ans[len(ans)-1]
-
+        stop = 1
 print(winNum)
 
 oof = 0
-for x in ans[len(ans)-1]:
+for x in a:
     for e in x:
         if e.count('yes') == 0:
             oof += int(e)
