@@ -16,7 +16,7 @@ print(len(f))
 #   if 0 in f:
 #     find = f.index(0)
 #     f[find::1] = [6 for x in f[find::1]]
-#     f[find-1::-1] = [x-1 for x in f[find-1::-1]] 
+#     f[find-1::-1] = [x-1 for x in f[find-1::-1]]
 #     f += [8] * (len(f)-find)
 #   else:
 #     f = [x-1 for x in f]
