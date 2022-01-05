@@ -14,9 +14,6 @@ for d in range(len(f[0])):
     f = f[g::1]
   else:
     f = f[g-1::-1]
-  f.sort(key=eh)
-  if d == 0:
-    print(f)
   c = 0
   b = g = 0
 print(f)

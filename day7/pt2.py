@@ -10,9 +10,8 @@ ans = []
 for i in range(2000):
   sum = 0
   for x in f:
-    sum += abs(x-i)
+    sum += (abs(x-i) * (abs(x-i) + 1))/2
   ans.append(sum)
 ans.sort()
 print(ans[0])
-# 459335
-# 339321
+# 95476244

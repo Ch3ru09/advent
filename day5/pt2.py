@@ -3,7 +3,7 @@ f = open('data.txt', 'r').read().split('\n')
 x1, y1, x2, y2, = [], [], [], []
 
 for e in f:
-  a = e.split(' -> ')
+  a = e.split('->')
 
   start = a[0].split(',')
   finish = a[1].split(',')
