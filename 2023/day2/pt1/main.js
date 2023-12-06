@@ -1,15 +1,15 @@
 const fs = require("fs");
 const path = require("path");
 
-let total = 0;
-const contained = {
-  red: 12,
-  green: 13,
-  blue: 14,
-};
-
 // fs.readFile(path.join(__dirname, "./test-data.txt"), "utf-8", (_, data) => {
 fs.readFile(path.join(__dirname, "../data.txt"), "utf-8", (_, data) => {
+  let total = 0;
+  const contained = {
+    red: 12,
+    green: 13,
+    blue: 14,
+  };
+
   data.split("\r\n").forEach((line, index) => {
     for (let set of line.split(": ").at(-1).split("; ")) {
       for (let color of set.split(", ")) {

@@ -10,7 +10,7 @@ fs.readFile("./day1/data.txt", "utf8", (_, data) => {
     total += number;
   });
 
-  return console.log(total);
+  console.log(total);
 });
 
 // * 56108

@@ -33,7 +33,7 @@ fs.readFile(path.join(__dirname, "../data.txt"), "utf8", (_, data) => {
     total += number;
   });
 
-  return console.log(total);
+  console.log(total);
 });
 
 // 55648 too low
@@ -41,4 +41,3 @@ fs.readFile(path.join(__dirname, "../data.txt"), "utf8", (_, data) => {
 // 55833 incorrect
 // 55862 incorrect
 // * 55652
-
