@@ -23,4 +23,3 @@ fs.readFile(path.join(__dirname, "../data.txt"), "utf-8", (_, data) => {
 
   console.log(total);
 });
-
